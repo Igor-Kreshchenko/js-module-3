@@ -1,6 +1,8 @@
-const oldClients = ["Манго", "Аякс", "Поли", "Киви"];
-const newClients = ["Персик", "Хьюстон"];
+const apartment = {
+  descr: "Просторная квартира в центре",
+  rating: 4,
+  price: 2153,
+};
 
-const allClients = oldClients.concat(newClients); // Дополни эту строку
-
-console.log(allClients);
+const keys = Object.keys(apartment);
+const values = Object.values(apartment);

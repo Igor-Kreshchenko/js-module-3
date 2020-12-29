@@ -1,11 +1,11 @@
-function makeStringFromArray(array, delimeter) {
-  let string = "";
+function countProps(object) {
+  let propCount = 0;
 
-  const joinedArray = array.join(delimeter);
-  string += joinedArray;
+  for (const key in object) {
+    if (object.hasOwnProperty(key)) {
+      propCount += 1;
+    }
+  }
 
-  return string;
+  return propCount;
 }
-
-console.log(makeStringFromArray(["Манго", "спешит", "на", "поезд"], " "));
-console.log(makeStringFromArray(["М", "а", "н", "г", "о"], ""));

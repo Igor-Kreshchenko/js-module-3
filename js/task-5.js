@@ -1,9 +1,12 @@
-const fruits = ["яблоко", "слива", "груша", "апельсин"];
+const apartment = {
+  imgUrl: "https://via.placeholder.com/640x480",
+  descr: "Просторная квартира в центре",
+  rating: 4,
+  price: 2153,
+  tags: ["premium", "promoted", "top"],
+};
 
-const firstElement = fruits[0];
-const secondElement = fruits[1];
-const lastElement = fruits[fruits.length - 1];
-
-console.log(firstElement);
-console.log(secondElement);
-console.log(lastElement);
+const aptRating = apartment["rating"];
+const aptDescr = apartment["descr"];
+const aptPrice = apartment["price"];
+const aptTags = apartment["tags"];

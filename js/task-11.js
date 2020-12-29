@@ -1,9 +1,20 @@
-function calculateEngravingPrice(message, pricePerWord) {
-  const words = message.split(" ");
-  const totalPrice = words.length * pricePerWord;
+const keys = [];
+const values = [];
+const advert = {
+  service: "apt",
+};
 
-  return totalPrice;
+const apartment = Object.create(advert);
+apartment.descr = "Просторная квартира в центре";
+apartment.rating = 4;
+apartment.price = 2153;
+
+for (const key in apartment) {
+  if (apartment.hasOwnProperty(key)) {
+    keys.push(key);
+    values.push(apartment[key]);
+  }
 }
 
-console.log(calculateEngravingPrice("JavaScript у меня в крови", 10));
-console.log(calculateEngravingPrice("JavaScript у меня в крови", 20));
+console.log(keys);
+console.log(values);

@@ -1,7 +1,13 @@
-const fruits = ["яблоко", "персик", "груша", "банан"];
+const name = "Ремонтный дроид";
+const price = 2500;
+const image = "https://via.placeholder.com/640x480";
+const tags = ["on sale", "trending", "best buy"];
 
-const lastElementIndex = fruits.length - 1;
-const lastElement = fruits[lastElementIndex];
+const product = {
+  name,
+  price,
+  image,
+  tags,
+};
 
-console.log(lastElementIndex);
-console.log(lastElement);
+console.table(product);

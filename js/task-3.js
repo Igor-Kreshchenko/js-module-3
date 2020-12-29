@@ -1,15 +1,17 @@
-function checkStorage(available, ordered) {
-  if (ordered === 0) {
-    return "В заказе ещё нет товаров";
-  }
+const apartment = {
+  imgUrl: "https://via.placeholder.com/640x480",
+  descr: "Просторная квартира в центре",
+  rating: 4,
+  price: 2153,
+  tags: ["premium", "promoted", "top"],
+};
 
-  if (ordered > available) {
-    return "Слишком большой заказ, на складе недостаточно товаров!";
-  }
+const aptRating = apartment.rating;
+const aptDescr = apartment.descr;
+const aptPrice = apartment.price;
+const aptTags = apartment.tags;
 
-  return "Заказ оформлен, с вами свяжется менеджер!";
-}
-
-console.log(checkStorage(20, 10));
-console.log(checkStorage(20, 0));
-console.log(checkStorage(20, 30));
+console.log(aptRating);
+console.log(aptDescr);
+console.log(aptPrice);
+console.log(aptTags);
